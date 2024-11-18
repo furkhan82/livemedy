@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="41.636">
+    <testcase classname="Smoke" name="Kullanici dogru kullanici adi ve dogru sifre ile sisteme girer" time="33.607">
+        <system-out><![CDATA[Given Kullanici livemedy ana sayfasini browserdan acar......................passed
+Then Kullanici login butonuna tiklar........................................passed
+And Kullanici dogru email girer.............................................passed
+Then Kullanici dogru sifre girer............................................passed
+And Kullanici Oturum acin butonuna tiklar...................................passed
+Then Kullanici acilan popup varsa kapatir...................................passed
+And Kullanici sms dogrulama kodunu girer ve tamam butonuna tiklar...........passed
+And Kullanıcı logout yapar..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Smoke" name="Kullanici dogru kullanici adi ve yanlis sifre ile sisteme giremez" time="7.885">
+        <system-out><![CDATA[Then Kullanici login butonuna tiklar........................................passed
+And Kullanici dogru email girer.............................................passed
+Then Kullanici yanlis sifre girer...........................................passed
+And Kullanici Oturum acin butonuna tiklar...................................passed
+Then Kullanici sifrenin yanlis oldugunu dogrular............................passed
+Then Kullanici acilan popup varsa kapatir...................................passed
+And Kullanici browseri kapatir..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
