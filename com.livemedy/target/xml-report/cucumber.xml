@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="41.636">
-    <testcase classname="Smoke" name="Kullanici dogru kullanici adi ve dogru sifre ile sisteme girer" time="33.607">
-        <system-out><![CDATA[Given Kullanici livemedy ana sayfasini browserdan acar......................passed
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="91.254">
+    <testcase classname="Smoke" name="Kullanici dogru kullanici adi ve dogru sifre ile sisteme girer" time="72.256">
+        <failure message="Expected condition failed: waiting for utils.WaitHelper$$Lambda$605/0x000001b20c3a4ae8@6aa3bfc (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.10.0', revision: 'c14d967899'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 132.0.2, moz:accessibilityChecks: false, moz:buildID: 20241110231641, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18112, moz:profile: C:\Users\Ercan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}&#10;Session ID: 46e30ffe-bbd3-46df-bda5-2ddab568a3ba" type="org.openqa.selenium.TimeoutException"><![CDATA[Given Kullanici livemedy ana sayfasini browserdan acar......................passed
 Then Kullanici login butonuna tiklar........................................passed
 And Kullanici dogru email girer.............................................passed
 Then Kullanici dogru sifre girer............................................passed
 And Kullanici Oturum acin butonuna tiklar...................................passed
 Then Kullanici acilan popup varsa kapatir...................................passed
 And Kullanici sms dogrulama kodunu girer ve tamam butonuna tiklar...........passed
-And Kullanıcı logout yapar..................................................passed
-]]></system-out>
+And Kullanıcı logout yapar..................................................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for utils.WaitHelper$$Lambda$605/0x000001b20c3a4ae8@6aa3bfc (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 132.0.2, moz:accessibilityChecks: false, moz:buildID: 20241110231641, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18112, moz:profile: C:\Users\Ercan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 46e30ffe-bbd3-46df-bda5-2ddab568a3ba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utils.WaitHelper.waitForJQueryToLoad(WaitHelper.java:13)
+	at stepdefinitions.Step.kullanıcı_logout_yapar(Step.java:48)
+	at ✽.Kullanıcı logout yapar(file:///C:/Users/Ercan/IdeaProjects/com.livemedy/com.livemedy/src/test/resources/features/livemedy.feature:13)
+]]></failure>
     </testcase>
-    <testcase classname="Smoke" name="Kullanici dogru kullanici adi ve yanlis sifre ile sisteme giremez" time="7.885">
-        <system-out><![CDATA[Then Kullanici login butonuna tiklar........................................passed
-And Kullanici dogru email girer.............................................passed
-Then Kullanici yanlis sifre girer...........................................passed
-And Kullanici Oturum acin butonuna tiklar...................................passed
-Then Kullanici sifrenin yanlis oldugunu dogrular............................passed
-Then Kullanici acilan popup varsa kapatir...................................passed
-And Kullanici browseri kapatir..............................................passed
-]]></system-out>
+    <testcase classname="Smoke" name="Kullanici dogru kullanici adi ve yanlis sifre ile sisteme giremez" time="18.822">
+        <failure message="Expected condition failed: waiting for utils.WaitHelper$$Lambda$605/0x000001b20c3a4ae8@6aa3bfc (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.10.0', revision: 'c14d967899'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 132.0.2, moz:accessibilityChecks: false, moz:buildID: 20241110231641, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18112, moz:profile: C:\Users\Ercan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}&#10;Session ID: 46e30ffe-bbd3-46df-bda5-2ddab568a3ba" type="org.openqa.selenium.TimeoutException"><![CDATA[Then Kullanici login butonuna tiklar........................................failed
+And Kullanici dogru email girer.............................................skipped
+Then Kullanici yanlis sifre girer...........................................skipped
+And Kullanici Oturum acin butonuna tiklar...................................skipped
+Then Kullanici sifrenin yanlis oldugunu dogrular............................skipped
+Then Kullanici acilan popup varsa kapatir...................................skipped
+And Kullanici browseri kapatir..............................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for utils.WaitHelper$$Lambda$605/0x000001b20c3a4ae8@6aa3bfc (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 132.0.2, moz:accessibilityChecks: false, moz:buildID: 20241110231641, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18112, moz:profile: C:\Users\Ercan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 46e30ffe-bbd3-46df-bda5-2ddab568a3ba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utils.WaitHelper.waitForJQueryToLoad(WaitHelper.java:13)
+	at stepdefinitions.Step.kullanici_login_butonuna_tiklar(Step.java:60)
+	at ✽.Kullanici login butonuna tiklar(file:///C:/Users/Ercan/IdeaProjects/com.livemedy/com.livemedy/src/test/resources/features/livemedy.feature:20)
+]]></failure>
     </testcase>
 </testsuite>
