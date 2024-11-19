@@ -48,8 +48,10 @@ public class Driver1 {
                     // Proxy kimlik doğrulama scriptini çalıştırma (AutoIt)
                     if (proxyUsername != null && proxyPassword != null) {
                         try {
-                            String autoItScriptPath = "C:\\Users\\Administrator\\Desktop\\Jenkins\\ProxyAuth.au3";
-                            String command = "C:\\Users\\Administrator\\Desktop\\Jenkins\\ProxyAuth.exe" + autoItScriptPath;
+                            // String autoItScriptPath = "C:\\Users\\Ercan\\Desktop\\ProxyAuth.au3";
+                            //String command = "C:\\Users\\Ercan\\Desktop\\ProxyAuth.exe " + autoItScriptPath;
+                            String autoItScriptPath = "C:\\Users\\Administrator\\Desktop\\Jenkins\\ProxyAuth.au3 ";
+                            String command = "C:\\Users\\Administrator\\Desktop\\Jenkins\\ProxyAuth.exe " + autoItScriptPath;
                             Runtime.getRuntime().exec(command);
                         } catch (IOException e) {
                             e.printStackTrace();
