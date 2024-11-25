@@ -65,7 +65,7 @@ public class Step {
     @Then("Kullanici dogru email girer")
     public void kullanici_dogru_email_girer() throws InterruptedException {
         WaitHelper.waitForJQueryToLoad(driver1);
-        livemedyPage.emailBox.sendKeys("fkarataslioglu@gmail.com");
+        livemedyPage.emailBox.sendKeys("fkarataslioglu1@gmail.com");
         Thread.sleep(2000);
 
 
